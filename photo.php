@@ -48,7 +48,7 @@
  <div style="margin: 40px;">
  
  <table class="phototable">
- <tr height=150>
+ <tr>
  <td style="text-align: center;" >
  <img src="photo/1.jpeg" alt="1" height=172 onclick="ChangeImageSize(this)">
  <br>
@@ -74,7 +74,7 @@
  Photo 5
  </td>
  </tr>
- <tr height=150>
+ <tr>
  <td style="text-align: center;" >
  <img src="photo/6.jpg" alt="6" height=172 onclick="ChangeImageSize(this)">
  <br>
@@ -100,7 +100,7 @@
  Photo 10
  </td>
  </tr>
- <tr height=150>
+ <tr>
  <td style="text-align: center;" >
  <img src="photo/11.jpg" alt="11" height=172 onclick="ChangeImageSize(this)">
  <br>
