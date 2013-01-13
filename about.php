@@ -8,36 +8,7 @@
 
  <meta http-EQUIV="Content-Type" Content="text/html; charset=windows-1251">
  <link rel="icon" href="favicon.ico" type="images/x-icon">
- <style type="text/css">
-   body 
-   {
-    background-image: url(images/bg.jpg);/* Цвет фона и путь к графическому файлу */
-	background-size: 100%;
-    color: #000; /* Цвет текста */
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-   }
-   table.maintable
-   {
-    border: 0px;
-	margin: auto;
-	margin-top: 5px; 
-	width: 805px;
-   }
-   .leftimg
-   {
-	float: left;
-	margin: 7px 15px 15px 0
-   }
-   .textcell
-   {
-    margin-left: 10px;
-	vertical-align: top;
-	background-image: url(images/2.png);
-	background-size:100% 100%;
-   }
-  </style>
+ <link href="style.css" TYPE="text/css" rel="stylesheet">
  </head>
 
  <body>
@@ -51,10 +22,10 @@
 </tr>
  <tr>
   <td style="text-align: center;">
-  <a href="index.html"><img src="images/main.png" alt="Main"></a>
-  <a href="about.html"><img src="images/about.png" alt="About"></a>
-  <a href="interests.html"><img src="images/interests.png" alt="Interests"></a>
-  <a href="photo.html"><img src="images/photo.png" alt="Photo"></a>
+  <a href="index.php"><img src="images/main.png" alt="Main"></a>
+  <a href="about.php"><img src="images/about.png" alt="About"></a>
+  <a href="interests.php"><img src="images/interests.png" alt="Interests"></a>
+  <a href="photo.php"><img src="images/photo.png" alt="Photo"></a>
   </td>
  </tr>
  <tr>
