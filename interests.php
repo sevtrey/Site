@@ -26,6 +26,8 @@
   <a href="about.php"><img src="images/about.png" alt="About"></a>
   <a href="interests.php"><img src="images/interests.png" alt="Interests"></a>
   <a href="photo.php"><img src="images/photo.png" alt="Photo"></a>
+  <a href="contacts.php"><img src="images/contacts.png" alt="Contacts"></a>
+  
   </td>
  </tr>
  <tr>
