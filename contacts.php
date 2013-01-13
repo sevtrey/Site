@@ -38,13 +38,13 @@
 
 	<b><i>Выберите соц. сеть</i></b>
 	<br><br>
-	<select name="spisok" size="1"> 
-							<option value="1">---------</option> 
-							<option value="1">Вконтакте</option> 
-							<option value="2">Twitter</option> 
-							<option value="3">YouTube</option> 
-							<option value="4">Facebook</option> 
-							<option value="5">Skype</option> 
+	<select name="spisok" size="1" onchange="document.location=this.options[this.selectedIndex].value"> 
+							<option value="0">---------</option> 
+							<option value="http://vk.com/flipper4me">Вконтакте</option> 
+							<option value="https://twitter.com/FLlPPY">Twitter</option> 
+							<option value="http://www.youtube.com/user/92sega">YouTube</option> 
+							<option value="http://www.facebook.com/profile.php?id=100003830786092">Facebook</option> 
+							<option value="Flipper4me">Skype</option> 
 						</select>
 &nbsp;
 	<input type="text" name="txtName" size="10" maxlength="256" value="">
