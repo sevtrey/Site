@@ -13,6 +13,16 @@
 
  <body>
 
+ <?
+   //Соединение с базой данных
+    $link = mysql_connect ("localhost", "root", "") or die ("Could not connect");
+   //Выбор базы данных 
+    $base=mysql_select_db ("note");
+    mysql_query("SET NAMES cp1251");
+	
+	//Запрос к базе данных
+    $query="select * from nt";		
+  ?>
 
 <table class="maintable">
 <tr>
@@ -50,8 +60,40 @@
 	<input type="text" name="txtName" size="10" maxlength="256" value="">
 &nbsp;	
 	<input type="submit" value="Перейти!">
-	
+	<br>
 </form>
+<br>
+<br>
+<CENTER>
+   <TABLE width=800 border=1>
+     <TR>
+	   <TD> Логин</TD>
+	   <TD> Пароль </TD>
+	   <TD> Группа </TD>
+	   <TD> Фамилия </TD>
+	   <TD> Город </TD>
+	 </TR>
+	<?
+	$res=mysql_query ($query) or die ("Не могу выбрать абонентов.<br> Ошибка в запросе: ".$query);
+    while(list($code,$login,$password,$group,$surname,$city)=mysql_fetch_array($res))
+    {
+    ?>	
+	 <TR>
+	   <TD> <?=$login?> </TD>
+	   <TD> <?=$password?> </TD>
+	   <TD> <?=$group?> </TD>
+	   <TD> <? if(!$surname){ 
+	   echo "Не указано" ;}
+	   else {echo "$surname";}?></TD>
+	   <TD> <?=$city?> </TD>
+	 </TR>
+	<?
+	}
+    ?>	
+   </TABLE>
+   </CENTER>
+
+
 </table>
  </div>
  <!--<img src="images/sevntu_1.jpeg" alt="Me" >-->
